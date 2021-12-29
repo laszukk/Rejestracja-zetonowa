@@ -37,7 +37,11 @@ class Kurs(models.Model):
     ilosc_godzin = models.IntegerField()
     sylabus = models.TextField()
 
+    def __str__(self):
+        return self.przedmiot + ' GR ' + str(self.grupa)
+
 class Zeton(models.Model):
-    id_kurs = models.ForeignKey(Kurs, on_delete=models.CASCADE)
-    id_instruktor = models.ForeignKey(Instruktor, on_delete=models.CASCADE)
-    data_zakupu = models.DateField()
+    id_kurs = models.ForeignKey(Kurs, on_delete=models.CASCADE, verbose_name="kurs")
+    id_kursant = models.ForeignKey(Kursant, on_delete=models.CASCADE,verbose_name="kursant")
+    data_zakupu = models.DateField(auto_now=True)
+

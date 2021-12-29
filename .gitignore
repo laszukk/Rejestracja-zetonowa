@@ -10,7 +10,7 @@ media
 
 # If you are using PyCharm # 
 # User-specific stuff
-.idea/**/workspace.xml
+.idea/**
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
@@ -99,7 +99,7 @@ celerybeat-schedule.*
 .env 
 .venv 
 env/ 
-venv/ 
+venv/**
 ENV/ 
 env.bak/ 
 venv.bak/ 
@@ -134,3 +134,5 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+/venv/
+/idea/

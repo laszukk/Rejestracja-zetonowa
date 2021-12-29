@@ -1,7 +1,14 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from .views import *
 
-from . import views
+router = routers.DefaultRouter()
+router.register('kursant', KursantView)
+router.register('instruktor', InstruktorView)
+router.register('kurs', KursView)
+router.register('zeton', ZetonView)
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', MainView.as_view(), name='index'),
+    path('api/', include(router.urls)),
 ]

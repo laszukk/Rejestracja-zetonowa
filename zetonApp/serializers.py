@@ -20,7 +20,15 @@ class KursSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ZetonSzkolenSerializer(serializers.ModelSerializer):
+class ZetonSerializer(serializers.ModelSerializer):
+
+    # def get_fields(self):
+    #     tmp = super().get_fields()
+    #     print(tmp)
+    #     return tmp
+    
     class Meta:
         model = Zeton
         fields = '__all__'
+        
+    
