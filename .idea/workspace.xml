@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65da1371-8562-4a87-86a4-6aa82e8e8ef8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zetonRej.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zetonRej.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zetonApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/zetonApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zetonApp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/zetonApp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zetonApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zetonApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zetonApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zetonApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zetonRej/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zetonRej/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="65da1371-8562-4a87-86a4-6aa82e8e8ef8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,11 +55,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640785412253</updated>
-      <workItem from="1640785413409" duration="2926000" />
+      <workItem from="1640785413409" duration="3251000" />
     </task>
+    <task id="LOCAL-00001" summary="commit 0.7">
+      <created>1640788431102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640788431102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit 0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 0.7" />
   </component>
 </project>
