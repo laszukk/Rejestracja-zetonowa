@@ -30,18 +30,18 @@ class Instruktor(models.Model):
         return self.imie + ' ' + self.nazwisko
 
 class Kurs(models.Model):
-    id_instruktor = models.ForeignKey(Instruktor, on_delete=models.CASCADE)
+    instruktor = models.ForeignKey(Instruktor,related_name="kursy", on_delete=models.CASCADE,null=True)
     przedmiot = models.CharField(max_length=20, choices=Instruktor.przedmiotKurs)
     grupa = models.IntegerField()
     miejsca = models.IntegerField()
     ilosc_godzin = models.IntegerField()
-    sylabus = models.TextField()
+    nazwa = models.TextField()
 
     def __str__(self):
         return self.przedmiot + ' GR ' + str(self.grupa)
 
 class Zeton(models.Model):
-    id_kurs = models.ForeignKey(Kurs, on_delete=models.CASCADE, verbose_name="kurs")
-    id_kursant = models.ForeignKey(Kursant, on_delete=models.CASCADE,verbose_name="kursant")
-    data_zakupu = models.DateField(auto_now=True)
+    kurs = models.ForeignKey(Kurs, related_name="zapisani",on_delete=models.CASCADE, verbose_name="kurs",null=True)
+    kursant = models.ForeignKey(Kursant,related_name="zetony", on_delete=models.CASCADE,verbose_name="kursant",null=True)
+    data_zakupu = models.DateField(auto_now_add=True)
 
